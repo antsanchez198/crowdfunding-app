@@ -20,6 +20,10 @@ body{
   font-family: 'Commissioner', sans-serif;
 }
 
+p {
+  color: var(--dark-grey);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@ body{
 .container section {
   background-color: white;
   padding: 40px;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -71,8 +75,11 @@ body{
 .progressBar {
   width: 100%;
   /* color: var(--color1); */
-  /* border: 0; */
-  background-color: var(--color1);
+  border: 0;
+  height: 10px;
+  border-radius: 100px;
+  color: var(--color1);
+  background-color: whitesmoke;
 }
 
 .statistics-container span {
@@ -81,6 +88,35 @@ body{
   background-color: lightgrey;
 }
 
+/* Section 3 */
+.container section:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
+.rewardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.rewardsContainer > div {
+  gap: 15px;
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  border: 1px solid var(--dark-grey);
+}
 
+.row-direction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-direction > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
