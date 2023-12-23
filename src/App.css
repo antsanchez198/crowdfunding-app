@@ -28,7 +28,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 552px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -47,8 +47,8 @@ p {
   justify-content: space-between;
   margin-top: 20px;
 }
-
-.button-containers button {
+ 
+button {
   border: none;
   padding: 15px 20px;
   border-radius: 25px;
@@ -56,12 +56,16 @@ p {
   font-weight: 700;
 }
 
-.button-containers button:first-child {
+button:hover {
+  cursor: pointer;
+}
+
+.greenBtn {
   background-color: var(--color1);
   color: white;
 }
 
-.button-containers button:last-child {
+.grayBtn {
   color: grey;
 }
 
@@ -106,12 +110,25 @@ p {
   flex-direction: column;
   display: flex;
   padding: 20px;
-  border: 1px solid var(--dark-grey);
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: 5px;
 }
+
+.rewardsContainer > div:last-child {
+  opacity: 0.6;
+}
+
+.rewardsContainer > div:last-child > button {
+cursor: none;}
 
 .row-direction {
   display: flex;
   justify-content: space-between;
+}
+
+.row-direction > p {
+  color: var(--color1);
+  font-weight: 500;
 }
 
 .row-direction > div {
@@ -120,3 +137,8 @@ p {
   align-items: center;
   gap: 5px;
 }
+
+.row-direction > div > p {
+  font-size: small;
+}
+

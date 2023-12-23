@@ -14,8 +14,8 @@ function App() {
             strain.
           </p>
           <div className="button-containers">
-            <button>Back this project</button>
-            <button>Bookmark</button>
+            <button className="greenBtn">Back this project</button>
+            <button className="grayBtn">Bookmark</button>
           </div>
         </section>
 
@@ -64,7 +64,7 @@ function App() {
                   <h2>101</h2>
                   <p>left</p>
                 </div>
-                <button>Select Reward</button>
+                <button className="greenBtn">Select Reward</button>
               </div>
             </div>
 
@@ -82,7 +82,7 @@ function App() {
                   <h2>64</h2>
                   <p>left</p>
                 </div>
-                <button>Select Reward</button>
+                <button className="greenBtn">Select Reward</button>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ function App() {
                   <h2>0</h2>
                   <p>left</p>
                 </div>
-                <button>Out of Stock</button>
+                <button className="grayBtn">Out of Stock</button>
               </div>
             </div>
           </div>
